@@ -54,62 +54,62 @@ export default function AdvancedSetting() {
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>章节乱序</span>
-            <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序。下一章节生效</span>
+            <span className={styles.sectionLabel}>Chapters out of order</span>
+            <span className={styles.sectionDescription}>After it is turned on, the words in each practice chapter will be randomly sorted. The next chapter will take effect</span>
             <div className={styles.switchBlock}>
               <Switch checked={randomConfig.isOpen} onChange={onToggleRandom} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`随机已${
-                randomConfig.isOpen ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Random${
+                randomConfig.isOpen ? 'Open' : 'Close'
               }`}</span>
             </div>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>练习时展示上一个/下一个单词</span>
-            <span className={styles.sectionDescription}>开启后，练习中会在上方展示上一个/下一个单词</span>
+            <span className={styles.sectionLabel}>Show previous/next word when practicing</span>
+            <span className={styles.sectionDescription}>When turned on, the previous/next word will be displayed above during practice.</span>
             <div className={styles.switchBlock}>
               <Switch checked={isShowPrevAndNextWord} onChange={onToggleLastAndNextWord} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示单词已${
-                isShowPrevAndNextWord ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Display word${
+                isShowPrevAndNextWord ? 'Open' : 'Close'
               }`}</span>
             </div>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>是否忽略大小写</span>
-            <span className={styles.sectionDescription}>开启后，输入时不区分大小写，如输入“hello”和“Hello”都会被认为是正确的</span>
+            <span className={styles.sectionLabel}>Whether to ignore case</span>
+            <span className={styles.sectionDescription}>When enabled, the input is not case-sensitive, so for example, both "hello" and "Hello" are considered correct.</span>
             <div className={styles.switchBlock}>
               <Switch checked={isIgnoreCase} onChange={onToggleIgnoreCase} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`忽略大小写已${
-                isIgnoreCase ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Ignore case${
+                isIgnoreCase ? 'Open' : 'Close'
               }`}</span>
             </div>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>是否允许选择文本</span>
-            <span className={styles.sectionDescription}>开启后，可以通过鼠标选择文本 </span>
+            <span className={styles.sectionLabel}>Whether to allow text selection</span>
+            <span className={styles.sectionDescription}>When enabled, you can select text with the mouse</span>
             <div className={styles.switchBlock}>
               <Switch checked={isTextSelectable} onChange={onToggleTextSelectable} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`选择文本已${
-                isTextSelectable ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Select text${
+                isTextSelectable ? 'Open' : 'Close'
               }`}</span>
             </div>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>是否允许默写模式下显示提示</span>
-            <span className={styles.sectionDescription}>开启后，可以通过鼠标 hover 单词显示正确答案 </span>
+            <span className={styles.sectionLabel}>Whether to allow prompts to be displayed in silent writing mode</span>
+            <span className={styles.sectionDescription}>After it is turned on, you can hover the mouse to display the correct answer.</span>
             <div className={styles.switchBlock}>
               <Switch checked={isShowAnswerOnHover} onChange={onToggleShowAnswerOnHover} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`显示提示已${
-                isShowAnswerOnHover ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Display prompt${
+                isShowAnswerOnHover ? 'Open' : 'Close'
               }`}</span>
             </div>
           </div>

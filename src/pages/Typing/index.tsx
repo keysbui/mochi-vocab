@@ -43,7 +43,7 @@ const App: React.FC = () => {
     if (!IsDesktop()) {
       setTimeout(() => {
         alert(
-          ' Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
+          'Qwerty Learner aims to improve the English input efficiency of keyboard workers. It is not yet compatible with mobile devices. We hope you will use a desktop browser to access it. If you are using a tablet device such as an Ipad, you can use an external keyboard to use this software.',
         )
       }, 500)
     }
@@ -138,7 +138,7 @@ const App: React.FC = () => {
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
+          <Tooltip content="Skip the word">
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'

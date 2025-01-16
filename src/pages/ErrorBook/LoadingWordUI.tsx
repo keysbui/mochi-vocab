@@ -12,7 +12,7 @@ export const LoadingWordUI: FC<LoadingWordUIProps> = ({ className, isLoading, ha
   return (
     <div className={`${className}`}>
       {hasError ? (
-        <div className="tooltip !bg-transparent" data-tip="数据加载失败">
+        <div className="tooltip !bg-transparent" data-tip="Data loading failed">
           <ErrorIcon className="text-red-500" />
         </div>
       ) : (
